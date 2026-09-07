@@ -1,0 +1,298 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x08000000         0x00080000         xr
+RAM              0x20000000         0x00020000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD crt0.o
+LOAD main.o
+LOAD buzzer.o
+LOAD player.o
+LOAD clock.o
+LOAD system_stm32f4xx.o
+LOAD generated/score_data.o
+LOAD C:/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard\libgcc.a
+
+.text           0x08000000      0x870
+                0x08000000                        __RO_BASE__ = .
+ *crt0.o(.text)
+ .text          0x08000000      0x204 crt0.o
+                0x08000198                RTC_Alarm_IRQHandler
+                0x08000198                EXTI2_IRQHandler
+                0x08000198                DebugMon_Handler
+                0x08000198                SPI4_IRQHandler
+                0x08000198                TIM1_CC_IRQHandler
+                0x08000198                DMA2_Stream5_IRQHandler
+                0x08000198                HardFault_Handler
+                0x08000198                DMA1_Stream5_IRQHandler
+                0x08000198                PVD_IRQHandler
+                0x08000198                SDIO_IRQHandler
+                0x08000198                TAMP_STAMP_IRQHandler
+                0x08000198                PendSV_Handler
+                0x08000198                NMI_Handler
+                0x08000198                EXTI3_IRQHandler
+                0x08000198                TIM1_UP_TIM10_IRQHandler
+                0x08000198                I2C3_ER_IRQHandler
+                0x08000198                EXTI0_IRQHandler
+                0x08000198                I2C2_EV_IRQHandler
+                0x08000198                DMA1_Stream2_IRQHandler
+                0x08000198                FPU_IRQHandler
+                0x08000198                UsageFault_Handler
+                0x08000198                DMA2_Stream2_IRQHandler
+                0x08000198                SPI1_IRQHandler
+                0x08000198                TIM1_BRK_TIM9_IRQHandler
+                0x08000198                DMA2_Stream3_IRQHandler
+                0x08000198                USART6_IRQHandler
+                0x08000198                DMA2_Stream0_IRQHandler
+                0x08000198                TIM4_IRQHandler
+                0x08000198                I2C1_EV_IRQHandler
+                0x08000198                Invalid_ISR
+                0x08000198                DMA1_Stream6_IRQHandler
+                0x08000198                DMA1_Stream1_IRQHandler
+                0x08000198                TIM3_IRQHandler
+                0x08000198                RCC_IRQHandler
+                0x08000198                EXTI15_10_IRQHandler
+                0x08000198                ADC_IRQHandler
+                0x08000198                DMA1_Stream7_IRQHandler
+                0x08000198                SPI5_IRQHandler
+                0x08000198                TIM5_IRQHandler
+                0x08000198                DMA2_Stream7_IRQHandler
+                0x08000198                I2C3_EV_IRQHandler
+                0x08000198                EXTI9_5_IRQHandler
+                0x08000198                RTC_WKUP_IRQHandler
+                0x08000198                SPI2_IRQHandler
+                0x08000198                MemManage_Handler
+                0x08000198                DMA1_Stream0_IRQHandler
+                0x08000198                SVC_Handler
+                0x08000198                EXTI4_IRQHandler
+                0x08000198                WWDG_IRQHandler
+                0x08000198                TIM2_IRQHandler
+                0x08000198                OTG_FS_WKUP_IRQHandler
+                0x08000198                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000198                EXTI1_IRQHandler
+                0x08000198                USART2_IRQHandler
+                0x08000198                I2C2_ER_IRQHandler
+                0x08000198                DMA2_Stream1_IRQHandler
+                0x08000198                FLASH_IRQHandler
+                0x08000198                DMA2_Stream4_IRQHandler
+                0x08000198                BusFault_Handler
+                0x08000198                USART1_IRQHandler
+                0x08000198                OTG_FS_IRQHandler
+                0x08000198                SPI3_IRQHandler
+                0x08000198                DMA1_Stream4_IRQHandler
+                0x08000198                I2C1_ER_IRQHandler
+                0x08000198                DMA2_Stream6_IRQHandler
+                0x08000198                DMA1_Stream3_IRQHandler
+                0x0800019c                __start
+ *(.text .text.*)
+ .text          0x08000204      0x168 main.o
+                0x08000204                SysTick_Handler
+                0x08000214                _Invalid_ISR
+                0x08000220                Main
+ .text          0x0800036c      0x174 buzzer.o
+                0x0800036c                Buzzer_Set
+                0x08000410                Buzzer_Silence
+                0x08000424                Buzzer_Init
+ .text          0x080004e0      0x298 player.o
+                0x080005fc                Player_Init
+                0x0800060c                Player_Next
+                0x08000628                Player_Update
+                0x080006e8                Player_Toggle
+                0x08000754                Player_State
+                0x08000760                Player_Movement
+                0x0800076c                Player_Position
+ .text          0x08000778       0x78 clock.o
+                0x08000778                Clock_Init
+ .text          0x080007f0       0x80 system_stm32f4xx.o
+                0x080007f0                SystemInit
+                0x08000804                SystemCoreClockUpdate
+ .text          0x08000870        0x0 generated/score_data.o
+                0x08000870                        . = ALIGN (0x4)
+
+.glue_7         0x08000870        0x0
+ .glue_7        0x08000870        0x0 linker stubs
+
+.glue_7t        0x08000870        0x0
+ .glue_7t       0x08000870        0x0 linker stubs
+
+.vfp11_veneer   0x08000870        0x0
+ .vfp11_veneer  0x08000870        0x0 linker stubs
+
+.v4_bx          0x08000870        0x0
+ .v4_bx         0x08000870        0x0 linker stubs
+
+.iplt           0x08000870        0x0
+ .iplt          0x08000870        0x0 crt0.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+
+.rodata         0x08000870    0x14220
+ *(.rodata .rodata.*)
+ .rodata        0x08000870       0x60 buzzer.o
+ .rodata        0x080008d0       0x18 system_stm32f4xx.o
+                0x080008d0                AHBPrescTable
+                0x080008e0                APBPrescTable
+ .rodata        0x080008e8    0x141a6 generated/score_data.o
+                0x080008e8                pitch_timers
+                0x08000ae8                scores
+                0x08014a90                        . = ALIGN (0x8)
+ *fill*         0x08014a8e        0x2 
+                0x08014a90                        __RO_LIMIT__ = .
+
+.rel.dyn        0x08014a90        0x0
+ .rel.iplt      0x08014a90        0x0 crt0.o
+
+.data           0x20000000        0x4 load address 0x08014a90
+                0x20000000                        __RW_BASE__ = .
+ *(.data .data.*)
+ .data          0x20000000        0x0 crt0.o
+ .data          0x20000000        0x0 main.o
+ .data          0x20000000        0x0 buzzer.o
+ .data          0x20000000        0x0 player.o
+ .data          0x20000000        0x0 clock.o
+ .data          0x20000000        0x4 system_stm32f4xx.o
+                0x20000000                SystemCoreClock
+ .data          0x20000004        0x0 generated/score_data.o
+                0x20000004                        . = ALIGN (0x4)
+                0x20000004                        __RW_LIMIT__ = .
+
+.igot.plt       0x20000004        0x0 load address 0x08014a94
+ .igot.plt      0x20000004        0x0 crt0.o
+
+.bss            0x20000004       0x44 load address 0x08014a94
+                0x20000004                        __ZI_BASE__ = .
+ *(.bss .bss.*)
+ .bss           0x20000004        0x0 crt0.o
+ .bss           0x20000004       0x15 main.o
+ .bss           0x20000019        0x0 buzzer.o
+ *fill*         0x20000019        0x3 
+ .bss           0x2000001c       0x2c player.o
+ .bss           0x20000048        0x0 clock.o
+ .bss           0x20000048        0x0 system_stm32f4xx.o
+ .bss           0x20000048        0x0 generated/score_data.o
+ *(COMMON)
+                0x20000048                        . = ALIGN (0x4)
+                0x20000048                        __ZI_LIMIT__ = .
+                0x00000001                        ASSERT ((__ZI_LIMIT__ <= ((ORIGIN (RAM) + LENGTH (RAM)) - 0x1000)), No stack space)
+OUTPUT(concert.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x35
+ .ARM.attributes
+                0x00000000       0x21 crt0.o
+ .ARM.attributes
+                0x00000021       0x34 main.o
+ .ARM.attributes
+                0x00000055       0x34 buzzer.o
+ .ARM.attributes
+                0x00000089       0x34 player.o
+ .ARM.attributes
+                0x000000bd       0x34 clock.o
+ .ARM.attributes
+                0x000000f1       0x34 system_stm32f4xx.o
+ .ARM.attributes
+                0x00000125       0x34 generated/score_data.o
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 main.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 buzzer.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 player.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 clock.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 system_stm32f4xx.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 generated/score_data.o
+                                 0x46 (size before relaxing)
+
+.debug_info     0x00000000     0x2223
+ .debug_info    0x00000000      0xb97 main.o
+ .debug_info    0x00000b97      0x715 buzzer.o
+ .debug_info    0x000012ac      0x58e player.o
+ .debug_info    0x0000183a      0x2e3 clock.o
+ .debug_info    0x00001b1d      0x532 system_stm32f4xx.o
+ .debug_info    0x0000204f      0x1d4 generated/score_data.o
+
+.debug_abbrev   0x00000000      0xacb
+ .debug_abbrev  0x00000000      0x2e7 main.o
+ .debug_abbrev  0x000002e7      0x23e buzzer.o
+ .debug_abbrev  0x00000525      0x2b5 player.o
+ .debug_abbrev  0x000007da      0x107 clock.o
+ .debug_abbrev  0x000008e1      0x11f system_stm32f4xx.o
+ .debug_abbrev  0x00000a00       0xcb generated/score_data.o
+
+.debug_loclists
+                0x00000000      0x5da
+ .debug_loclists
+                0x00000000      0x104 main.o
+ .debug_loclists
+                0x00000104      0x188 buzzer.o
+ .debug_loclists
+                0x0000028c      0x2ea player.o
+ .debug_loclists
+                0x00000576       0x64 system_stm32f4xx.o
+
+.debug_aranges  0x00000000       0xb8
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 buzzer.o
+ .debug_aranges
+                0x00000040       0x20 player.o
+ .debug_aranges
+                0x00000060       0x20 clock.o
+ .debug_aranges
+                0x00000080       0x20 system_stm32f4xx.o
+ .debug_aranges
+                0x000000a0       0x18 generated/score_data.o
+
+.debug_rnglists
+                0x00000000       0x7a
+ .debug_rnglists
+                0x00000000       0x25 main.o
+ .debug_rnglists
+                0x00000025       0x2e buzzer.o
+ .debug_rnglists
+                0x00000053       0x27 player.o
+
+.debug_line     0x00000000     0x1198
+ .debug_line    0x00000000      0x39b main.o
+ .debug_line    0x0000039b      0x35a buzzer.o
+ .debug_line    0x000006f5      0x6f0 player.o
+ .debug_line    0x00000de5      0x17c clock.o
+ .debug_line    0x00000f61      0x17f system_stm32f4xx.o
+ .debug_line    0x000010e0       0xb8 generated/score_data.o
+
+.debug_str      0x00000000      0xad8
+ .debug_str     0x00000000      0xad8 main.o
+                                0x877 (size before relaxing)
+ .debug_str     0x00000ad8        0x0 buzzer.o
+                                0x39c (size before relaxing)
+ .debug_str     0x00000ad8        0x0 player.o
+                                0x2f3 (size before relaxing)
+ .debug_str     0x00000ad8        0x0 clock.o
+                                0x2bb (size before relaxing)
+ .debug_str     0x00000ad8        0x0 system_stm32f4xx.o
+                                0x335 (size before relaxing)
+ .debug_str     0x00000ad8        0x0 generated/score_data.o
+                                0x1e2 (size before relaxing)
+
+.debug_frame    0x00000000      0x240
+ .debug_frame   0x00000000       0x58 main.o
+ .debug_frame   0x00000058       0x70 buzzer.o
+ .debug_frame   0x000000c8      0x128 player.o
+ .debug_frame   0x000001f0       0x20 clock.o
+ .debug_frame   0x00000210       0x30 system_stm32f4xx.o

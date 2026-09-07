@@ -1,0 +1,310 @@
+{
+  "movements": [
+    {
+      "file": "tchaikovsky_concerto_1_1_(c)yogore.mid",
+      "format": 1,
+      "ppq": 480,
+      "tracks": [
+        {
+          "track": 0,
+          "name": "tchaikovsky concerto1 mv1",
+          "notes": 0,
+          "channels": [],
+          "programs": [],
+          "pitch_range": []
+        },
+        {
+          "track": 1,
+          "name": "Grand Piano",
+          "notes": 6966,
+          "channels": [
+            1
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            28,
+            106
+          ]
+        },
+        {
+          "track": 2,
+          "name": "Instrument17",
+          "notes": 5652,
+          "channels": [
+            2
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            16,
+            98
+          ]
+        },
+        {
+          "track": 3,
+          "name": "Instrument18",
+          "notes": 3913,
+          "channels": [
+            3
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            28,
+            96
+          ]
+        },
+        {
+          "track": 4,
+          "name": "Instrument19",
+          "notes": 3133,
+          "channels": [
+            4
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            31,
+            83
+          ]
+        },
+        {
+          "track": 5,
+          "name": "",
+          "notes": 0,
+          "channels": [],
+          "programs": [],
+          "pitch_range": []
+        }
+      ],
+      "duration_ms": 1187778,
+      "tempo_changes": 170,
+      "controls": {
+        "7": 4,
+        "10": 4,
+        "64": 1149
+      },
+      "closed_at_end": 0,
+      "pitch_bend_events": 0,
+      "max_source_polyphony": 33,
+      "max_distinct_pitches": 20,
+      "over_8_pitches_ms": 136203,
+      "source_notes": 19664,
+      "represented_note_ids": 18385,
+      "frames": 10420,
+      "encoded_bytes": 48726,
+      "sustain_tail_ms": 180,
+      "sha256": "f713f11979193b4843d4d8adc934fdaa2e362f2b931193b0632a6bc3ed032955"
+    },
+    {
+      "file": "tchaikovsky_concerto_1_2_(c)yogore.mid",
+      "format": 1,
+      "ppq": 480,
+      "tracks": [
+        {
+          "track": 0,
+          "name": "tchaikovsky concerto1 mv2",
+          "notes": 0,
+          "channels": [],
+          "programs": [],
+          "pitch_range": []
+        },
+        {
+          "track": 1,
+          "name": "Grand Piano",
+          "notes": 2176,
+          "channels": [
+            1
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            33,
+            103
+          ]
+        },
+        {
+          "track": 2,
+          "name": "Instrument17",
+          "notes": 1297,
+          "channels": [
+            2
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            30,
+            93
+          ]
+        },
+        {
+          "track": 3,
+          "name": "Instrument18",
+          "notes": 943,
+          "channels": [
+            3
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            49,
+            92
+          ]
+        },
+        {
+          "track": 4,
+          "name": "Instrument19",
+          "notes": 567,
+          "channels": [
+            4
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            34,
+            73
+          ]
+        },
+        {
+          "track": 5,
+          "name": "",
+          "notes": 0,
+          "channels": [],
+          "programs": [],
+          "pitch_range": []
+        }
+      ],
+      "duration_ms": 333942,
+      "tempo_changes": 38,
+      "controls": {
+        "7": 4,
+        "10": 4,
+        "64": 231
+      },
+      "closed_at_end": 40,
+      "pitch_bend_events": 0,
+      "max_source_polyphony": 21,
+      "max_distinct_pitches": 14,
+      "over_8_pitches_ms": 15734,
+      "source_notes": 4983,
+      "represented_note_ids": 4793,
+      "frames": 2531,
+      "encoded_bytes": 12304,
+      "sustain_tail_ms": 180,
+      "sha256": "caf95ce35e3d26ac97b8f91c2caf45e6a8fa7ac3d849f94cfd9ff3ca92d4e8f0"
+    },
+    {
+      "file": "tchaikovsky_concerto_1_3_(c)yogore.mid",
+      "format": 1,
+      "ppq": 480,
+      "tracks": [
+        {
+          "track": 0,
+          "name": "tchaikovsky concerto1 mv3",
+          "notes": 0,
+          "channels": [],
+          "programs": [],
+          "pitch_range": []
+        },
+        {
+          "track": 1,
+          "name": "Grand Piano",
+          "notes": 3244,
+          "channels": [
+            1
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            34,
+            106
+          ]
+        },
+        {
+          "track": 2,
+          "name": "Instrument17",
+          "notes": 2273,
+          "channels": [
+            2
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            26,
+            98
+          ]
+        },
+        {
+          "track": 3,
+          "name": "Instrument18",
+          "notes": 2186,
+          "channels": [
+            3
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            41,
+            94
+          ]
+        },
+        {
+          "track": 4,
+          "name": "Instrument19",
+          "notes": 1771,
+          "channels": [
+            4
+          ],
+          "programs": [
+            0
+          ],
+          "pitch_range": [
+            29,
+            75
+          ]
+        },
+        {
+          "track": 5,
+          "name": "",
+          "notes": 0,
+          "channels": [],
+          "programs": [],
+          "pitch_range": []
+        }
+      ],
+      "duration_ms": 380133,
+      "tempo_changes": 39,
+      "controls": {
+        "7": 4,
+        "10": 4,
+        "64": 211
+      },
+      "closed_at_end": 0,
+      "pitch_bend_events": 0,
+      "max_source_polyphony": 32,
+      "max_distinct_pitches": 18,
+      "over_8_pitches_ms": 37794,
+      "source_notes": 9474,
+      "represented_note_ids": 8877,
+      "frames": 3874,
+      "encoded_bytes": 20764,
+      "sustain_tail_ms": 180,
+      "sha256": "9caf1c7bce0008d744174062ab95dabf4a203f301b9e60af2cc3d103daa176da"
+    }
+  ],
+  "total_score_bytes": 81794,
+  "max_timer_quantization_cents": 0.07472859381336797,
+  "arrangement": "Tracks 1/2 solo and 3/4 accompaniment inferred from opening; heuristic eight-note reduction, original pitches and tempo map."
+}

@@ -1,0 +1,228 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x08000000         0x00080000         xr
+RAM              0x20000000         0x00020000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD crt0.o
+LOAD tone_test.o
+LOAD clock.o
+LOAD system_stm32f4xx.o
+LOAD C:/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard\libgcc.a
+
+.text           0x08000000      0x510
+                0x08000000                        __RO_BASE__ = .
+ *crt0.o(.text)
+ .text          0x08000000      0x204 crt0.o
+                0x08000198                RTC_Alarm_IRQHandler
+                0x08000198                EXTI2_IRQHandler
+                0x08000198                DebugMon_Handler
+                0x08000198                SPI4_IRQHandler
+                0x08000198                TIM1_CC_IRQHandler
+                0x08000198                DMA2_Stream5_IRQHandler
+                0x08000198                HardFault_Handler
+                0x08000198                DMA1_Stream5_IRQHandler
+                0x08000198                PVD_IRQHandler
+                0x08000198                SDIO_IRQHandler
+                0x08000198                TAMP_STAMP_IRQHandler
+                0x08000198                PendSV_Handler
+                0x08000198                NMI_Handler
+                0x08000198                EXTI3_IRQHandler
+                0x08000198                TIM1_UP_TIM10_IRQHandler
+                0x08000198                I2C3_ER_IRQHandler
+                0x08000198                EXTI0_IRQHandler
+                0x08000198                I2C2_EV_IRQHandler
+                0x08000198                DMA1_Stream2_IRQHandler
+                0x08000198                FPU_IRQHandler
+                0x08000198                UsageFault_Handler
+                0x08000198                DMA2_Stream2_IRQHandler
+                0x08000198                SPI1_IRQHandler
+                0x08000198                TIM1_BRK_TIM9_IRQHandler
+                0x08000198                DMA2_Stream3_IRQHandler
+                0x08000198                USART6_IRQHandler
+                0x08000198                DMA2_Stream0_IRQHandler
+                0x08000198                TIM4_IRQHandler
+                0x08000198                I2C1_EV_IRQHandler
+                0x08000198                Invalid_ISR
+                0x08000198                DMA1_Stream6_IRQHandler
+                0x08000198                DMA1_Stream1_IRQHandler
+                0x08000198                TIM3_IRQHandler
+                0x08000198                RCC_IRQHandler
+                0x08000198                EXTI15_10_IRQHandler
+                0x08000198                ADC_IRQHandler
+                0x08000198                DMA1_Stream7_IRQHandler
+                0x08000198                SPI5_IRQHandler
+                0x08000198                TIM5_IRQHandler
+                0x08000198                DMA2_Stream7_IRQHandler
+                0x08000198                I2C3_EV_IRQHandler
+                0x08000198                EXTI9_5_IRQHandler
+                0x08000198                RTC_WKUP_IRQHandler
+                0x08000198                SPI2_IRQHandler
+                0x08000198                MemManage_Handler
+                0x08000198                DMA1_Stream0_IRQHandler
+                0x08000198                SVC_Handler
+                0x08000198                EXTI4_IRQHandler
+                0x08000198                WWDG_IRQHandler
+                0x08000198                TIM2_IRQHandler
+                0x08000198                OTG_FS_WKUP_IRQHandler
+                0x08000198                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000198                EXTI1_IRQHandler
+                0x08000198                USART2_IRQHandler
+                0x08000198                I2C2_ER_IRQHandler
+                0x08000198                DMA2_Stream1_IRQHandler
+                0x08000198                FLASH_IRQHandler
+                0x08000198                DMA2_Stream4_IRQHandler
+                0x08000198                BusFault_Handler
+                0x08000198                USART1_IRQHandler
+                0x08000198                OTG_FS_IRQHandler
+                0x08000198                SPI3_IRQHandler
+                0x08000198                DMA1_Stream4_IRQHandler
+                0x08000198                I2C1_ER_IRQHandler
+                0x08000198                DMA2_Stream6_IRQHandler
+                0x08000198                DMA1_Stream3_IRQHandler
+                0x0800019c                __start
+ *(.text .text.*)
+ .text          0x08000204      0x214 tone_test.o
+                0x08000278                SysTick_Handler
+                0x08000288                _Invalid_ISR
+                0x080002b4                Main
+ .text          0x08000418       0x78 clock.o
+                0x08000418                Clock_Init
+ .text          0x08000490       0x80 system_stm32f4xx.o
+                0x08000490                SystemInit
+                0x080004a4                SystemCoreClockUpdate
+                0x08000510                        . = ALIGN (0x4)
+
+.glue_7         0x08000510        0x0
+ .glue_7        0x08000510        0x0 linker stubs
+
+.glue_7t        0x08000510        0x0
+ .glue_7t       0x08000510        0x0 linker stubs
+
+.vfp11_veneer   0x08000510        0x0
+ .vfp11_veneer  0x08000510        0x0 linker stubs
+
+.v4_bx          0x08000510        0x0
+ .v4_bx         0x08000510        0x0 linker stubs
+
+.iplt           0x08000510        0x0
+ .iplt          0x08000510        0x0 crt0.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+
+.rodata         0x08000510       0x28
+ *(.rodata .rodata.*)
+ .rodata        0x08000510       0x10 tone_test.o
+ .rodata        0x08000520       0x18 system_stm32f4xx.o
+                0x08000520                AHBPrescTable
+                0x08000530                APBPrescTable
+                0x08000538                        . = ALIGN (0x8)
+                0x08000538                        __RO_LIMIT__ = .
+
+.rel.dyn        0x08000538        0x0
+ .rel.iplt      0x08000538        0x0 crt0.o
+
+.data           0x20000000        0x4 load address 0x08000538
+                0x20000000                        __RW_BASE__ = .
+ *(.data .data.*)
+ .data          0x20000000        0x0 crt0.o
+ .data          0x20000000        0x0 tone_test.o
+ .data          0x20000000        0x0 clock.o
+ .data          0x20000000        0x4 system_stm32f4xx.o
+                0x20000000                SystemCoreClock
+                0x20000004                        . = ALIGN (0x4)
+                0x20000004                        __RW_LIMIT__ = .
+
+.igot.plt       0x20000004        0x0 load address 0x0800053c
+ .igot.plt      0x20000004        0x0 crt0.o
+
+.bss            0x20000004        0x4 load address 0x0800053c
+                0x20000004                        __ZI_BASE__ = .
+ *(.bss .bss.*)
+ .bss           0x20000004        0x0 crt0.o
+ .bss           0x20000004        0x4 tone_test.o
+ .bss           0x20000008        0x0 clock.o
+ .bss           0x20000008        0x0 system_stm32f4xx.o
+ *(COMMON)
+                0x20000008                        . = ALIGN (0x4)
+                0x20000008                        __ZI_LIMIT__ = .
+                0x00000001                        ASSERT ((__ZI_LIMIT__ <= ((ORIGIN (RAM) + LENGTH (RAM)) - 0x1000)), No stack space)
+OUTPUT(tone_test.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x35
+ .ARM.attributes
+                0x00000000       0x21 crt0.o
+ .ARM.attributes
+                0x00000021       0x34 tone_test.o
+ .ARM.attributes
+                0x00000055       0x34 clock.o
+ .ARM.attributes
+                0x00000089       0x34 system_stm32f4xx.o
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 tone_test.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 clock.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 system_stm32f4xx.o
+                                 0x46 (size before relaxing)
+
+.debug_info     0x00000000     0x13f0
+ .debug_info    0x00000000      0xbdb tone_test.o
+ .debug_info    0x00000bdb      0x2e3 clock.o
+ .debug_info    0x00000ebe      0x532 system_stm32f4xx.o
+
+.debug_abbrev   0x00000000      0x4d4
+ .debug_abbrev  0x00000000      0x2ae tone_test.o
+ .debug_abbrev  0x000002ae      0x107 clock.o
+ .debug_abbrev  0x000003b5      0x11f system_stm32f4xx.o
+
+.debug_loclists
+                0x00000000      0x14b
+ .debug_loclists
+                0x00000000       0xe7 tone_test.o
+ .debug_loclists
+                0x000000e7       0x64 system_stm32f4xx.o
+
+.debug_aranges  0x00000000       0x60
+ .debug_aranges
+                0x00000000       0x20 tone_test.o
+ .debug_aranges
+                0x00000020       0x20 clock.o
+ .debug_aranges
+                0x00000040       0x20 system_stm32f4xx.o
+
+.debug_rnglists
+                0x00000000       0x27
+ .debug_rnglists
+                0x00000000       0x27 tone_test.o
+
+.debug_line     0x00000000      0x72c
+ .debug_line    0x00000000      0x431 tone_test.o
+ .debug_line    0x00000431      0x17c clock.o
+ .debug_line    0x000005ad      0x17f system_stm32f4xx.o
+
+.debug_str      0x00000000      0x851
+ .debug_str     0x00000000      0x851 tone_test.o
+                                0x7e5 (size before relaxing)
+ .debug_str     0x00000851        0x0 clock.o
+                                0x2bb (size before relaxing)
+ .debug_str     0x00000851        0x0 system_stm32f4xx.o
+                                0x335 (size before relaxing)
+
+.debug_frame    0x00000000       0xc0
+ .debug_frame   0x00000000       0x70 tone_test.o
+ .debug_frame   0x00000070       0x20 clock.o
+ .debug_frame   0x00000090       0x30 system_stm32f4xx.o
